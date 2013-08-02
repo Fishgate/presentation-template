@@ -15,6 +15,10 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+        <!--/// REVEAL CSS \\\-->
+        <link rel="stylesheet" href="js/reveal/reveal.css" />
+        
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -30,16 +34,57 @@
                 <div class="left bar fg_green"></div>
                 <img id="logo" src="img/logo.png" />
             </div>
+            <div id="next">a</div>
+            <div id="prev">b</div>
         </div>
         
-        <div id="next">></div>
-        <div id="prev"><</div>
+        <aside>
+            <!--=============== CONTACT ASIDE w/MODAL ======-->
+            <a class="asides contact" data-reveal-id="modalContact">d</a>
+            
+            <div id="modalContact" class="reveal-modal">
+                <h1>Contact Details</h1>
+                <p>Should you feel the need to contact us, you may do so by the following methods below:</p>
+                <ul>
+                    <li>Tel: 021 914 4054</li>
+                    <li>Email: <a href="mailto:info@fishgate.co.za">info@fishgate.co.za</a></li>
+                    <li>Or visit our website to see more. <a href="http://www.fishgate.co.za" target="_blank">www.fishgate.co.za</a></li>
+                </ul>
+                <a class="close-reveal-modal">&#215;</a>
+            </div>
+            <!--=============== CONTACT ASIDE w/MODAL ======-->
+            <a class="asides info" data-reveal-id="modalInfo">f</a>
+            
+            <div id="modalInfo" class="reveal-modal">
+                <h1>Info:</h1>
+                <p>This slideshow presentation was lovingly put together by a skilled team of individuals at Fishgate.</p>
+                <p>That is all</p>
+                <a class="close-reveal-modal">&#215;</a>
+            </div>
+        </aside>
+        
         
         <div class="slideshow">
+            
+            
             <div class="image_holder">
-                <!--<h2>Home Page</h2>-->
+                <div id="myModal" class="reveal-modal">
+                    <h1>Notes:</h1>
+                    <p>These are notes for this page, if there is something to be clarified with the client it can be noted here and viewed when on this slide in the slideshow.</p>
+                    <p>Notes are specific to slides, hence id there are no notes for any particular slide, no notes icon will be shown</p>
+                    <ul>
+                        <li>Item one</li>
+                        <li>Two items</li>
+                        <li>Here are three</li>
+                        <li>How about 4 items?</li>
+                    </ul>
+                    <a class="close-reveal-modal">&#215;</a>
+               </div>
+                <a class="notes" data-reveal-id="myModal">j</a>
+                
                 <img src="img/Home.jpg" />
             </div>
+            
             <div class="image_holder">
                 <!--<h2>Option 1 Menu</h2>-->
                 <img src="img/OIM_Design_Option2_Menu.jpg" />
@@ -49,6 +94,7 @@
                 <!--<h2>Option 2</h2>-->
                 <img src="img/OIM_Master.jpg" />
             </div>
+            
             <div class="image_holder">
                 <!--<h2>Option 2 Menu</h2>-->
                 <img src="img/Primary_Navigation.jpg" />
@@ -57,10 +103,16 @@
         
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/cycle.js"></script>
-        <script src="js/main.js"></script>
+        
+        <!--/// REVEAL JS \\\-->
+        <script src="js/reveal/jquery.reveal.js"></script>
+        
+        <script type="text/javascript" src="js/cycle.js"></script>
+        
+        <script type="text/javascript" src="js/main.js"></script>
+        
         
     </body>
 </html>

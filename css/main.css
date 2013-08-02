@@ -93,6 +93,22 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+a{text-decoration: none;}
+/*===================================
+       ICONS FONTFACE
+=====================================*/
+@font-face {
+  font-family: "FG_UI";
+  src:url("../fonts/FG_UI.eot");
+  src:url("../fonts/FG_UI.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/FG_UI.ttf") format("truetype"),
+    url("../fonts/FG_UI.svg#FG_UI") format("svg"),
+    url("../fonts/FG_UI.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 /*===================================
        UNIQUE BODY STYLE
 =====================================*/
@@ -148,6 +164,11 @@ body{
 }
 #next, #prev{
     cursor: pointer;
+    font-family: 'FG_UI';
+    font-size: 20px;
+}
+#next:hover, #prev:hover{
+    color:#5cdeff;
 }
 
 #next{
@@ -187,11 +208,46 @@ h2{
     font-weight: normal;
 }
 
-
-
-
-
-
+/*===================================
+    FIXED NOTES AND ASIDES
+=====================================*/
+.notes{
+    font-family: 'FG_UI';
+    position: fixed;
+    top: 220px;
+    right: 0;
+    z-index: 200;
+    color: #597781;
+    font-size: 25px;
+    padding: 10px;
+}
+.notes:hover{
+    cursor: pointer;
+    color: #fc0;
+}
+.info:hover{
+    cursor: pointer;
+    color: #5cdeff;
+}
+.contact:hover{
+    cursor: pointer;
+    color: #f60;
+}
+.asides{
+    font-family: 'FG_UI';
+    position: fixed;
+    right: 0;
+    z-index: 200;
+    color: #597781;
+    font-size: 25px;
+    padding: 10px;
+}
+.info{
+    top: 300px;
+}
+.contact{
+    top: 260px;
+}
 
 
 
